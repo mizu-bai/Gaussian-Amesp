@@ -1,0 +1,28 @@
+%nproc=1
+%chk=CH3CN-ts-opt-freq.chk
+#p external="python3 -u ../../src/gamesp.py" freq
+
+Title Card Required
+
+0 1
+ C                 -0.00356651    0.01722812    0.98553895
+ H                 -0.30188384    1.00653820    1.26333723
+ H                 -0.63354829   -0.69590324    1.47489174
+ H                  1.01275688   -0.14435303    1.27858814
+ N                 -0.00534910   -0.54793073   -0.71776351
+ C                 -0.00308033    0.59431074   -0.81761770
+
+
+--link1--
+%nproc=1
+%chk=CH3CN-ts-opt-freq.chk
+#p external="python3 -u ../../src/gamesp.py" opt=(ts,rcfc,noeigen,nomicro) geom=allcheck
+
+
+
+--link1--
+%nproc=1
+%chk=CH3CN-ts-opt-freq.chk
+#p external="python3 -u ../../src/gamesp.py" freq geom=allcheck
+
+

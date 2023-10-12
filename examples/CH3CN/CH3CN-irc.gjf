@@ -1,0 +1,5 @@
+%nproc=1
+%oldchk=CH3CN-ts-opt-freq.chk
+#p external="python3 -u ../../src/gamesp.py" irc=(rcfc) geom=allcheck
+
+

@@ -1,0 +1,225 @@
+ **************************************************************** 
+ **              _      __  __   _____   ____    ____          ** 
+ **             / \    |  \/  | | ____| / ___|  |  _ \         ** 
+ **            / _ \   | |\/| | |  _|   \___ \  | |_) |        ** 
+ **           / ___ \  | |  | | | |___   ___) | |  __/         ** 
+ **          /_/   \_\ |_|  |_| |_____| |____/  |_|            ** 
+ **                                                            ** 
+ **     Atomic and molecular electronic structure program      ** 
+ **                                                            ** 
+ **                  Author : Zhang Yingfeng                   ** 
+ **                                                            ** 
+ **         Version 1.1(dev), release date: 2023-10-06         ** 
+ **                                                            ** 
+ **               Amesp website : www.amesp.xyz                ** 
+ **                                                            ** 
+ **************************************************************** 
+ 
+ ------------------------- Input File ---------------------------
+ 
+ % npara 8
+ % maxcore 2000
+ ! B3LYP D3BJ 6-31G** force
+ >xyz 0 1
+ O        0.00000000       0.00000000      -0.11085126
+ H        0.00000000      -0.78383678       0.44340504
+ H        0.00000000       0.78383678       0.44340504
+ end
+ 
+ ----------------------------------------------------------------
+ 
+  Method: b3lyp ; Basis Set: 6-31g(dp)
+ 
+ ----------------------------------------------------------------
+ 
+  Number of atom type : 2
+  Alpha electrons:      5  Beta electrons:      5
+  Number of Atoms:      3  Number of nuclear charges:     10
+  Number of Shell:     12  Number of basis functions:     24
+  Highest Ang-Mom:      2  Maximum Contraction Depth:      6
+  Number of primitive gaussian functions:      42
+ 
+  Basis Set Information:
+   O              [ 3s 2p 1d | 10s 4p 1d ]
+   H              [ 2s 1p | 4s 1p ]
+ 
+ Current Geometry(angstroms):
+ 
+  O               0.00000000    0.00000000   -0.11085126
+  H               0.00000000   -0.78383678    0.44340504
+  H               0.00000000    0.78383678    0.44340504
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         2.962474        1.567674
+  Min Atomic Distance :         1.814137        0.960000
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00000000          0.00000000         -0.04882174
+ 
+  Rotational Constants [GHZ]:
+     919.0225853         408.0851405         282.5991090
+ 
+  Point Group of Current Geometry:     C2v
+ 
+  Max memory used/input in current calculation: 11MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0037 Seconds
+  Nuclear attraction   :               0.0000 Seconds
+  Dipole moment ints   :               0.0001 Seconds
+ 
+  Four-centre eris     :               0.0077 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-7)
+  Convergence of RMS-Density change :  10^(-7)
+ 
+  Atom SCF Done after   51 cycles for O
+  Atom SCF Done after    1 cycles for H
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 14198
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.328
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -7.63409530E+01   3.03E+01   0.00E+00   1.34E-01    0.00
+    2  -7.60476356E+01   2.93E-01   2.03E-02   6.76E-02    0.00
+                    ==== Turning on DIIS ====
+    3  -7.62473502E+01  -2.00E-01   8.62E-03   1.65E-02    0.00
+    4  -7.64163233E+01  -1.69E-01   1.66E-03   1.68E-02    0.00
+    5  -7.64156136E+01   7.10E-04   2.12E-03   1.97E-02    0.00
+    6  -7.64174116E+01  -1.80E-03   1.14E-03   1.65E-03    0.00
+    7  -7.64174236E+01  -1.20E-05   9.10E-05   1.52E-04    0.00
+    8  -7.64174237E+01  -1.16E-07   7.94E-06   1.38E-05    0.00
+    9  -7.64174237E+01  -6.87E-10   6.37E-07   5.32E-07    0.00
+   10  -7.64174237E+01  -1.56E-12   6.47E-08   5.30E-08    0.00
+ 
+ ================================================================
+  SCF Done , After  10 cycles.   Total SCF time:       0.001 min
+ 
+  -V/T =             2.0060          EN_N =       9.157175190
+  ETot =      -76.417423696          Ekin =      75.963617581
+  EN_e =     -199.088627743          Ee_e =      45.121819916
+  E_xc =       -7.571408639          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1     5
+      -19.1288593      -0.9932651      -0.5251366      -0.3581371
+       -0.2891034
+ 
+   vir orbital:      6    24
+        0.0702087       0.1552105       0.7792554       0.7986230
+        0.8938079       0.9186051       1.0203169       1.3278082
+        1.5197704       1.5899989       1.6640735       2.2322139
+        2.2594722       2.4811855       2.6341100       2.6835114
+        3.0369367       3.3787138       3.5159632
+ 
+ HOMO =      -0.2891034 AU   index :  5
+ LUMO =       0.0702087 AU   index :  6
+ 
+ HOMO-LUMO gap:      0.3593122 AU    =     225.4719698 Kcal/mol
+             =       9.7773796 eV    =     943.3740606  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   O        -0.620401
+     2   H         0.310201
+     3   H         0.310201
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=    -0.0000    Y=    -0.0000    Z=     1.9482    Tot=     1.9482
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -7.1150     YY=         -4.0308     ZZ=         -6.0819
+   XY=         0.0000     XZ=         -0.0000     YZ=          0.0000
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -1.3724     YY=          1.7118     ZZ=         -0.3393
+   XY=         0.0000     XZ=         -0.0000     YZ=          0.0000
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=         -0.0000   YYY=         -0.0000   ZZZ=          1.0640
+   XYY=         -0.0000   XXY=         -0.0000   XXZ=          0.2795
+   XZZ=         -0.0000   YZZ=          0.0000   YYZ=          1.2174
+   XYZ=         -0.0000
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.000573582
+  E[DFT]  =    -76.417997278
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.000
+ Time of two-ints gradient:(s)      0.005
+ Time of Exc-term gradient:(s)      0.011
+ 
+ Cartesian Force (Hartrees/Bohr):
+                    x                y                z
+  O           0.0000000000     0.0000000000    -0.0153845648
+  H           0.0000000000     0.0031328389     0.0076922824
+  H          -0.0000000000    -0.0031328389     0.0076922824
+ 
+ Total time of gradient:        0.0003 min
+ 
+ ----------------------------------------------------------------
+ 
+ Final Geometry(angstroms):
+ 
+  3
+  O            0.00000000    0.00000000   -0.11085126
+  H            0.00000000   -0.78383678    0.44340504
+  H            0.00000000    0.78383678    0.44340504
+ 
+ Final Energy:      -76.4179972776
+ 
+ ====================================================================
+ 
+ The program run from  2023-10-12  10:24:12  to  2023-10-12  10:24:13
+ Total run time:     0 days,   0  hours,   0 minutes,  0.4887 seconds
+ Normal termination of Amesp!
+ 
+ ====================================================================

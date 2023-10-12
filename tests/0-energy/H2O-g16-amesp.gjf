@@ -1,0 +1,11 @@
+%nproc=1
+%chk=H2O-g16-amesp.chk
+#p external="python3 -u ../../src/gamesp.py" nosymm
+
+H2O energy task (g16-amesp)
+
+0 1
+ O                  0.00000000   -0.00000000   -0.11085125
+ H                  0.00000000   -0.78383672    0.44340501
+ H                 -0.00000000    0.78383672    0.44340501
+

@@ -1,0 +1,252 @@
+ **************************************************************** 
+ **              _      __  __   _____   ____    ____          ** 
+ **             / \    |  \/  | | ____| / ___|  |  _ \         ** 
+ **            / _ \   | |\/| | |  _|   \___ \  | |_) |        ** 
+ **           / ___ \  | |  | | | |___   ___) | |  __/         ** 
+ **          /_/   \_\ |_|  |_| |_____| |____/  |_|            ** 
+ **                                                            ** 
+ **     Atomic and molecular electronic structure program      ** 
+ **                                                            ** 
+ **                  Author : Zhang Yingfeng                   ** 
+ **                                                            ** 
+ **         Version 1.1(dev), release date: 2023-10-06         ** 
+ **                                                            ** 
+ **               Amesp website : www.amesp.xyz                ** 
+ **                                                            ** 
+ **************************************************************** 
+ 
+ ------------------------- Input File ---------------------------
+ 
+ % npara 10
+ % maxcore 2000
+ ! B3LYP D3BJ 6-31G** force
+ >xyz 0 1
+ C        0.14537080      -0.00904180       1.06373352
+ H        0.04732199       1.04968051       1.29929459
+ H       -0.74039189      -0.55148263       1.39162513
+ H        1.02225954      -0.41125528       1.56674130
+ N        0.39070837      -0.21404523      -0.45345655
+ C       -0.62724498       0.25076120      -0.89199422
+ end
+ 
+ ----------------------------------------------------------------
+ 
+  Method: b3lyp ; Basis Set: 6-31g(dp)
+ 
+ ----------------------------------------------------------------
+ 
+  Number of atom type : 3
+  Alpha electrons:     11  Beta electrons:     11
+  Number of Atoms:      6  Number of nuclear charges:     22
+  Number of Shell:     27  Number of basis functions:     57
+  Highest Ang-Mom:      2  Maximum Contraction Depth:      6
+  Number of primitive gaussian functions:     105
+ 
+  Basis Set Information:
+   C              [ 3s 2p 1d | 10s 4p 1d ]
+   H              [ 2s 1p | 4s 1p ]
+   N              [ 3s 2p 1d | 10s 4p 1d ]
+ 
+ Current Geometry(angstroms):
+ 
+  C               0.14537080   -0.00904180    1.06373352
+  H               0.04732199    1.04968051    1.29929459
+  H              -0.74039189   -0.55148263    1.39162513
+  H               1.02225954   -0.41125528    1.56674130
+  N               0.39070837   -0.21404523   -0.45345655
+  C              -0.62724498    0.25076120   -0.89199422
+ 
+ ----------------------------------------------------------------
+ 
+                                  Bohr            Angs
+  Max Atomic Distance :         5.733228        3.033894
+  Min Atomic Distance :         2.056007        1.087992
+ 
+ ----------------------------------------------------------------
+ 
+  Centre of gravity [angstrom]:
+      0.00049708         -0.00022023          0.00005029
+ 
+  Rotational Constants [GHZ]:
+      51.8332100          14.1577780          11.9676944
+ 
+  Point Group of Current Geometry:      C1
+ 
+  Max memory used/input in current calculation: 27MB/2000MB
+ 
+ ----------------------------------------------------------------
+ 
+  Density Functional Information:
+ 
+  B3LYP = 0.8*LDA_x + 0.72*B88_x + 0.19*VWN5_c + 0.81*LYP_c + 0.2*HF
+ 
+  fxc type : Hybrid-GGA
+ 
+ ====================== Electron Integral =======================
+ 
+  Integral threshhold  :               10^(-10)
+  Primitive cut-off    :               10^(-11)
+ 
+  Overlap and Kinetic  :               0.0051 Seconds
+  Nuclear attraction   :               0.0002 Seconds
+  Dipole moment ints   :               0.0007 Seconds
+ 
+  Four-centre eris     :               0.2328 Seconds
+ 
+ ======================= SCF Preparation ========================
+ 
+  Max number of SCF iterations      :  125
+  Convergence of Energy change      :  10^(-7)
+  Convergence of RMS-Density change :  10^(-7)
+ 
+  Atom SCF Done after   48 cycles for C
+  Atom SCF Done after    1 cycles for H
+  Atom SCF Done after   49 cycles for N
+ 
+  DFT Grid generation...     Grid level : lv3
+ 
+  Max number of radial  grid points : 60
+  Max number of angular grid points : 590
+ 
+  Total number of DFT grid points: 29998
+ 
+  Initial guess generation...    Initial guess : harris
+ 
+              Initial Guess Done, Time(s):     0.639
+ 
+ ======================= SCF Iterations =========================
+ 
+ Cycle      Energy       Delta-E    RMS-DDen   DIIS_ER  time(min)
+ 
+    1  -1.32646947E+02   4.51E+01   0.00E+00   3.88E-02    0.00
+                    ==== Turning on DIIS ====
+    2  -1.32487608E+02   1.59E-01   5.25E-03   1.83E-02    0.00
+    3  -1.32663813E+02  -1.76E-01   2.85E-03   2.48E-02    0.00
+    4  -1.32647322E+02   1.65E-02   2.98E-03   5.04E-02    0.00
+    5  -1.32671644E+02  -2.43E-02   1.73E-03   6.58E-03    0.00
+    6  -1.32671088E+02   5.56E-04   8.07E-04   9.91E-03    0.00
+    7  -1.32672253E+02  -1.16E-03   4.72E-04   1.89E-03    0.00
+    8  -1.32672325E+02  -7.19E-05   1.31E-04   5.99E-05    0.00
+    9  -1.32672325E+02  -2.90E-08   3.39E-06   1.85E-05    0.00
+   10  -1.32672325E+02  -4.53E-09   1.08E-06   2.40E-06    0.00
+   11  -1.32672325E+02  -1.47E-10   2.41E-07   4.21E-07    0.00
+   12  -1.32672325E+02  -3.27E-12   3.18E-08   9.61E-08    0.00
+ 
+ ================================================================
+  SCF Done , After  12 cycles.   Total SCF time:       0.010 min
+ 
+  -V/T =             2.0065          EN_N =      60.249133346
+  ETot =     -132.672324783          Ekin =     131.819160084
+  EN_e =     -428.803247332          Ee_e =     119.250113021
+  E_xc =      -15.187483901          Epcm =       0.000000000
+ ================================================================
+ 
+ EigenValues:
+ 
+   occ orbital:      1    11
+      -14.3558911     -10.2524909     -10.2379419      -0.9619668
+       -0.7191151      -0.5140115      -0.4664201      -0.4520496
+       -0.3690662      -0.3314112      -0.3050302
+ 
+   vir orbital:     12    57
+       -0.0435963       0.0135607       0.1089443       0.1254388
+        0.1649162       0.1669346       0.3556774       0.4916328
+        0.5233025       0.5574134       0.5771692       0.5816039
+        0.6509289       0.7127604       0.7592837       0.8039982
+        0.8295706       0.8564620       0.8799414       0.9716886
+        1.1781768       1.2841303       1.3097329       1.3689042
+        1.5192658       1.6690348       1.7109970       1.7414443
+        1.9159544       1.9286442       2.0051893       2.0452801
+        2.0462586       2.3270849       2.3788515       2.4056110
+        2.4755375       2.5359587       2.5780956       2.6355673
+        2.8076663       2.8286186       2.9293261       3.1844663
+        3.3835785       3.4008191
+ 
+ HOMO =      -0.3050302 AU   index :  11
+ LUMO =      -0.0435963 AU   index :  12
+ 
+ HOMO-LUMO gap:      0.2614338 AU    =     164.0523284 Kcal/mol
+             =       7.1139747 eV    =     686.3944611  KJ/mol
+ 
+ Mulliken charges:
+ 
+     1   C        -0.238436
+     2   H         0.156066
+     3   H         0.155713
+     4   H         0.152080
+     5   N        -0.284718
+     6   C         0.059295
+ Sum of Mulliken charges =     -0.00000
+ 
+ Dipole moment (field-independent basis, Debye):
+ 
+   X=     0.3139    Y=    -0.0121    Z=     2.4115    Tot=     2.4318
+ 
+ Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=       -19.5809     YY=        -18.0687     ZZ=        -17.1266
+   XY=         0.8909     XZ=         -0.5966     YZ=          0.3166
+ 
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+ 
+   XX=        -1.3222     YY=          0.1900     ZZ=          1.1321
+   XY=         0.8909     XZ=         -0.5966     YZ=          0.3166
+ 
+ Octapole moment (field-independent basis, Debye-Ang*Ang):
+ 
+   XXX=          3.3983   YYY=         -0.1969   ZZZ=         -0.9007
+   XYY=          0.6574   XXY=         -1.5815   XXZ=          2.4642
+   XZZ=          2.2168   YZZ=         -1.1244   YYZ=          0.4654
+   XYZ=         -1.0395
+ 
+ DFT dispersion correction, using Becke-Johnson damping:
+
+  DFT-D3(BJ) parameters
+    s6  scaling factor     :      1.0000
+    a1  scaling factor     :      0.3981
+    s8  scaling factor     :      1.9889
+    a2  scaling factor     :      4.4211
+
+  E[disp] =     -0.005300779
+  E[DFT]  =   -132.677625562
+ 
+ ========================== Gradients ===========================
+ 
+ Calculating the Cartesian gradients...
+ 
+ Time of one-ints gradient:(s)      0.005
+ Time of two-ints gradient:(s)      0.151
+ Time of Exc-term gradient:(s)      0.058
+ 
+ Cartesian Force (Hartrees/Bohr):
+                    x                y                z
+  C           0.0138441596    -0.0062326795     0.0047511475
+  H           0.0007420234    -0.0002966118     0.0007466185
+  H           0.0007230911    -0.0002933463     0.0007445915
+  H           0.0009517065    -0.0004409465     0.0002853539
+  N          -0.0181387125     0.0097784784     0.0196022516
+  C           0.0018777320    -0.0025148942    -0.0261299630
+ 
+ Total time of gradient:        0.0036 min
+ 
+ ----------------------------------------------------------------
+ 
+ Final Geometry(angstroms):
+ 
+  6
+  C            0.14537080   -0.00904180    1.06373352
+  H            0.04732199    1.04968051    1.29929459
+  H           -0.74039189   -0.55148263    1.39162513
+  H            1.02225954   -0.41125528    1.56674130
+  N            0.39070837   -0.21404523   -0.45345655
+  C           -0.62724498    0.25076120   -0.89199422
+ 
+ Final Energy:     -132.6776255617
+ 
+ ====================================================================
+ 
+ The program run from  2023-10-12  11:40:19  to  2023-10-12  11:40:21
+ Total run time:     0 days,   0  hours,   0 minutes,  1.7551 seconds
+ Normal termination of Amesp!
+ 
+ ====================================================================

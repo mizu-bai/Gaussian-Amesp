@@ -1,0 +1,11 @@
+%nproc=1
+%chk=H2O-opt-freq.chk
+#p external="python3 -u ../src/gamesp.py" nosymm
+
+Title Card Required
+
+0 1
+ O                  0.00000000   -0.00000000   -0.11085125
+ H                  0.00000000   -0.78383672    0.44340501
+ H                 -0.00000000    0.78383672    0.44340501
+
